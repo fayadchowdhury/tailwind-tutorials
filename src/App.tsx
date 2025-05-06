@@ -5,10 +5,199 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="bg-violet-200 h-10 w-full border-2 border-violet-600 rounded-md my-4 p-2">
+    <div className="bg-violet-200 h-full w-full border-2 border-violet-600 rounded-md p-2">
       <h1 className="text-[35px] text-[#9e7171] text-center font-mono">
         Vite + React + TypeScript + TailwindCSS
       </h1>
+
+      {/* Static positioning goes with the normal flow of the web page */}
+      {/*<div className="static bg-red-300">
+        <p>Static parent</p>
+        <div className="absolute bottom-0 left-0 bg-red-500">
+          <p>Absolute child of static parent</p>
+        </div>
+      </div>*/}
+
+      {/* Relative positioning moves the children elements relative to the normal position of the relative parent*/}
+      {/*<div className="relative bg-blue-300">
+        <p>Relative parent</p>
+        <div className="absolute top-0 left-10 bg-blue-500 mt-3">
+          <p>Absolute child 1 of relative parent</p>
+        </div>
+        <div className="absolute top-10 left-10 bg-blue-500">
+          <p>Absolute child 2 of relative parent</p>
+        </div>
+      </div>*/}
+
+      {/* Fixed positioning is relative to the viewport */}
+      {/*<div className="fixed bg-green-300">
+        <p>Fixed parent</p>
+        <div className="absolute top-10 left-10 bg-green-500">
+          <p>Absolute child of fixed parent</p>
+        </div>
+      </div>*/}
+
+      {/* Sticky positioning - super useful in building soething like a contact list */}
+      <div>
+        <div>
+          <div className="sticky top-0 ...">A</div>
+          <div>
+            <div>
+              <strong>Andrew Alfred</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+            <div>
+              <strong>Aisha Houston</strong>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="sticky top-0">B</div>
+          <div>
+            <div>
+              <img src="/img/bob.jpg" />
+              <strong>Bob Alfred</strong>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
