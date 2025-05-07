@@ -221,6 +221,18 @@ function App() {
         <div className="bg-blue-300 h-16 w-16 rounded-full"></div>
         <div className="bg-green-300 h-16 rounded-full"></div>
       </div>
+
+      {/* Media queries in tailwind are mobile first*/}
+      {/* apply hidden to all sizes other than the one you want it visible for */}
+      <div className="text-red-500 sm:text-red-500 md:text-yellow-500 lg:text-green-500">
+        <p>Text is red for sm, yellow for md and green for lg+</p>
+      </div>
+      <div className="text-red-500 md:hidden">
+        <p>Text is hidden for md+</p>
+      </div>
+      <div className="max-sm:hidden">
+        <p>Text is hidden for displays sm-</p>
+      </div>
     </div>
   );
 }
