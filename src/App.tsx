@@ -241,6 +241,13 @@ function App() {
       <a href="https://flowbite.com/docs/customize/dark-mode/">
         Cool dark mode!
       </a>
+      {/* Experimenting with theme variables and directives */}
+      {/* Check tailwind.config.js file */}
+      {/* For components it is probably a better idea to create and style them individually */}
+      {/* But it is also possible to modify the index.css file and do @layer components { .component-class: css-classes } */}
+      <div className="card">
+        <p className="text-chestnut">Chestnut text</p>
+      </div>
     </div>
   );
 }
