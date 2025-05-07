@@ -233,6 +233,14 @@ function App() {
       <div className="max-sm:hidden">
         <p>Text is hidden for displays sm-</p>
       </div>
+      {/* Tailwind offers a CSS selector for dark mode */}
+      <div className="bg-white dark:bg-black text-black dark:text-white">
+        <p>Text is black for light mode and white for dark mode</p>
+      </div>
+      {/* There is a cooler way to toggle dark mode on/off */}
+      <a href="https://flowbite.com/docs/customize/dark-mode/">
+        Cool dark mode!
+      </a>
     </div>
   );
 }
