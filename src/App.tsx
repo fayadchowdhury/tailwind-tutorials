@@ -38,7 +38,7 @@ function App() {
       </div>*/}
 
       {/* Sticky positioning - super useful in building soething like a contact list */}
-      <div>
+      {/*<div>
         <div>
           <div className="sticky top-0 ...">A</div>
           <div>
@@ -197,6 +197,29 @@ function App() {
             </div>
           </div>
         </div>
+      </div>*/}
+
+      {/* An important way to organize layouts is by using flexbox */}
+      <div className="flex justify-normal gap-2 m-5">
+        {/* The flex class sort of arranges the children elements in the parent relative to the parent box */}
+        <div className=" bg-red-300 h-16 w-16 rounded-full"></div>
+        <div className=" bg-green-300 h-16 w-16 rounded-full"></div>
+        <div className=" bg-blue-300 h-16 w-16 rounded-full"></div>
+      </div>
+      <div className="flex flex-col items-center justify-between gap-2 m-5">
+        {/* It is also possible to do columnar layouts using flexbox and flex-col */}
+        {/* The items-[] class then modifies the placement of the flex column*/}
+        <div className=" bg-red-300 h-16 w-16 rounded-full"></div>
+        <div className=" bg-green-300 h-16 w-16 rounded-full"></div>
+        <div className=" bg-blue-300 h-16 w-16 rounded-full"></div>
+      </div>
+
+      {/* It is also possible to use grid to organize layouts */}
+      {/* With grids, if no space is provided the child element will occupy any space available to it */}
+      <div className="grid grid-cols-8 gap-2 m-5">
+        <div className="bg-red-300 h-16 w-16 rounded-full"></div>
+        <div className="bg-blue-300 h-16 w-16 rounded-full"></div>
+        <div className="bg-green-300 h-16 rounded-full"></div>
       </div>
     </div>
   );
